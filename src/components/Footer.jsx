@@ -29,7 +29,7 @@ export default function Footer() {
             <a href="#contact" className="hover:text-orange-500 transition">
               Contact
             </a>
-            <a href="internships" className="hover:text-orange-500 transition">
+            <a href="#internships" className="hover:text-orange-500 transition">
               Internships
             </a>
           </div>
