@@ -1,18 +1,16 @@
-import "react";
-import Hero from "./components/Hero";
-import Features from "./components/Features";
-import Stats from "./components/Stats";
-import Footer from "./components/Footer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import LandingPage from "./pages/LandingPage";
+import Waitlist from "./pages/Waitlist";
 
 function App() {
- 
   return (
-    <>
-      <Hero />
-      <Features />
-      <Stats />
-      <Footer />
-    </>
+    
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<LandingPage/>} />
+          <Route path="/waitlist" element={<Waitlist/>} />
+        </Routes>
+      </BrowserRouter>
   );
 }
 
